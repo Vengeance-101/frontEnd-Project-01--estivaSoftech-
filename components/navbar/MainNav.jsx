@@ -3,16 +3,24 @@ import Link from "next/link";
 import React from "react";
 import { TbPhoneCall } from "react-icons/tb";
 import { megamenuLinks } from "@/data/Navdata/Navdata";
+import { navAnimation } from "@/utils/navAnimation/navAnimation";
 const MainNav = () => {
+  navAnimation();
   return (
-    <div className="w-full  backdrop-blur-md fixed  border-b-[1px] border-gray-800 z-[999]">
+    <div className="w-full  backdrop-blur-md fixed nav-container top-0 left-0 bg-transparent border-b-[1px] border-gray-800 z-[999]">
       <div className="container  mx-auto px-11    flex justify-between items-center ">
-        <div className="logo">
+        <div className="logo relative ">
           <Image
             src="/header_logo/estivaLogo.webp"
             width={256}
             height={58}
-            className=" object-cover h-full w-full"
+            className=" object-cover   main-logo-1 h-full w-full"
+          />
+          <Image
+            src="/header_logo/estiva2.webp"
+            width={256}
+            height={58}
+            className=" object-cover opacity-0  top-0 left-0 absolute main-logo-2 none h-full w-full"
           />
         </div>
         <div className="links">
@@ -51,7 +59,7 @@ const MainNav = () => {
                   </div>
                   <div className="w-[20%]  h-full   py-24">
                     <Link href="#">
-                      <p className="text-white border-l-2 ps-9 py-8 font-bold text-3xl text-center ">
+                      <p className="text-white slogan border-l-2 ps-9 py-8 font-bold text-3xl text-center ">
                         THINK BEYOND TECHNOLOGY
                       </p>
                     </Link>
@@ -75,9 +83,9 @@ const MainNav = () => {
             className="h-[12vh] w-full text-white flex gap-2 py-4 items-center"
           >
             <div>
-              <TbPhoneCall className="text-white text-4xl" />
+              <TbPhoneCall className="text-white  megaicon text-4xl" />
             </div>
-            <div className="text-white text-start border-s-2 text-sm font-bold ps-5">
+            <div className="text-white contact-details-title text-start border-s-2 text-sm font-bold ps-5">
               <p>Call & chat us today!</p>
               <p>+91-9990 140 888</p>
             </div>

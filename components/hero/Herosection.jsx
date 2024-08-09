@@ -1,57 +1,14 @@
 "use client";
 import HeroGrid from "@/lib/herogrid/HeroGrid";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+import { talkBtn } from "@/utils/talkBtn/TalkBtn";
 import Link from "next/link";
 import React from "react";
 import { FaCircle } from "react-icons/fa";
 const Herosection = () => {
-  useGSAP(() => {
-    let index = 0;
-    let span1 = document.querySelectorAll(".text-hover .split-1 span");
-    let span2 = document.querySelectorAll(".text-hover .split-2 span");
-    console.log(span1);
-    let hover = document.querySelector(".talk-btn ");
-    hover.addEventListener("mouseenter", () => {
-      gsap.to(span1, {
-        y: -35,
-        ease: "power3.inOut",
-        stagger: 0.025,
-        delay: 0.05,
-        duration: 0.25,
-      });
+  talkBtn();
 
-      gsap.to(span2, {
-        y: -35,
-        delay: 0.05,
-
-        stagger: 0.025,
-        ease: "power3.inOut",
-        duration: 0.25,
-      });
-    });
-    hover.addEventListener("mouseleave", () => {
-      gsap.to(span1, {
-        stagger: 0.025,
-        duration: 0.25,
-        ease: "power3.inOut",
-        delay: 0.05,
-
-        y: 0,
-      });
-
-      gsap.to(span2, {
-        stagger: 0.025,
-        duration: 0.25,
-        ease: "power3.inOut",
-        delay: 0.05,
-
-        y: 0,
-      });
-    });
-  });
   return (
-    <div className="w-full h-[145vh] relative border-t-[1px] border-black ">
+    <div className="w-full h-[145vh] overflow-hidden relative border-t-[1px] border-black ">
       <video
         src="/heroVideo/heroVideo.webm"
         muted

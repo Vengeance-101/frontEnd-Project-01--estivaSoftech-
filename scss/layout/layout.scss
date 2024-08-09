@@ -10,11 +10,11 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(rgb(37, 157, 255),rgb(48, 255, 48));
+  background: linear-gradient(#4087DD,#F6BA19);
   border-radius: 20px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(0, 114, 207);
+  background: linear-gradient(#0073ff,#ffbb00);
 }
 
 #main{

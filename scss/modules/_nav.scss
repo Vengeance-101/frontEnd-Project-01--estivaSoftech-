@@ -41,3 +41,23 @@
 scale: 1.05;
 box-shadow: 10px  10px 10px rgba(0, 0, 0, 0.349);
 }
+
+.slidedown{
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  color:#0F172A;
+  animation:  slidedown .4s forwards;
+}
+
+@keyframes slidedown{
+  from{
+    top: -100%;
+  }
+  to{
+    top: 0;
+  }
+}

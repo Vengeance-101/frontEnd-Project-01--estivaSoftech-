@@ -6,12 +6,9 @@ import LocomotiveScroll from "locomotive-scroll";
 const MainPage = () => {
   const scrollRef = useRef(null);
   useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector("#main"),
-      smooth: true,
-    });
+    const locomotiveScroll = new LocomotiveScroll();
     return () => {
-      scroll.destroy();
+      locomotiveScroll.destroy();
     };
   });
   return (
