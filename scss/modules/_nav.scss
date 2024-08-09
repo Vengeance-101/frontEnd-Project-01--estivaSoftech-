@@ -1,0 +1,43 @@
+.links{
+
+  ul{
+    display: flex;
+    gap: 2rem;
+    a{
+      width: 100%;
+      height: 12vh;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: white;
+      transition: all 300ms ease-in;
+    }
+  }
+  li:hover>a{
+    scale: 1.2;
+    font-weight: bolder;
+  }
+  .megamenu{
+    background: linear-gradient(to left,#131E34,#013352,#121F36);
+    transition: all 600ms ease-in-out;
+    top: 12vh;
+    letter-spacing: 1px;
+    
+  }
+  li:hover>.megamenu{
+  height: 50vh;
+  } 
+
+}
+
+
+.logo{
+  width: 18%;
+} 
+
+
+.megalinks:hover{
+scale: 1.05;
+box-shadow: 10px  10px 10px rgba(0, 0, 0, 0.349);
+}

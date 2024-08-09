@@ -1,0 +1,219 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgb(37, 157, 255), rgb(48, 255, 48));
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 114, 207);
+}
+
+#main {
+  overflow-x: hidden;
+}
+
+/*! locomotive-scroll v4.1.3 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+html.has-scroll-dragging {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.has-scroll-smooth body {
+  overflow: hidden;
+}
+
+.has-scroll-smooth [data-scroll-container] {
+  min-height: 100vh;
+}
+
+[data-scroll-direction=horizontal] [data-scroll-container] {
+  height: 100vh;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+[data-scroll-direction=horizontal] [data-scroll-section] {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.c-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 11px;
+  height: 100%;
+  transform-origin: center right;
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0;
+}
+
+.c-scrollbar:hover {
+  transform: scaleX(1.45);
+}
+
+.c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+  opacity: 1;
+}
+
+[data-scroll-direction=horizontal] .c-scrollbar {
+  width: 100%;
+  height: 10px;
+  top: auto;
+  bottom: 0;
+  transform: scaleY(1);
+}
+
+[data-scroll-direction=horizontal] .c-scrollbar:hover {
+  transform: scaleY(1.3);
+}
+
+.c-scrollbar_thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  width: 7px;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: grab;
+}
+
+.has-scroll-dragging .c-scrollbar_thumb {
+  cursor: grabbing;
+}
+
+[data-scroll-direction=horizontal] .c-scrollbar_thumb {
+  right: auto;
+  bottom: 0;
+}
+
+.links ul {
+  display: flex;
+  gap: 2rem;
+}
+.links ul a {
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  transition: all 300ms ease-in;
+}
+.links li:hover > a {
+  scale: 1.2;
+  font-weight: bolder;
+}
+.links .megamenu {
+  background: linear-gradient(to left, #131E34, #013352, #121F36);
+  transition: all 600ms ease-in-out;
+  top: 12vh;
+  letter-spacing: 1px;
+}
+.links li:hover > .megamenu {
+  height: 50vh;
+}
+
+.logo {
+  width: 18%;
+}
+
+.megalinks:hover {
+  scale: 1.05;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.349);
+}
+
+.title {
+  width: 60%;
+  margin-top: 10rem;
+  font-weight: 900;
+}
+.title span {
+  background: linear-gradient(to left, #FABB16, #3D86E0);
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-weight: 900;
+}
+
+.subtitle {
+  width: 65%;
+  margin-top: 3rem;
+}
+
+.talk-btn a {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+}
+.talk-btn a .dot {
+  color: rgba(255, 255, 255, 0.521);
+}
+.talk-btn a:hover .dot {
+  color: #00ACED;
+  scale: 1.5;
+}
+.talk-btn a:hover h1 {
+  color: white;
+}
+.talk-btn a h1 {
+  color: rgba(255, 255, 255, 0.521);
+  transition: all 300ms ease-in-out;
+  font-weight: 700;
+}
+.talk-btn a::after {
+  content: "";
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  background: transparent;
+  border-radius: 50%;
+  top: 50%;
+  z-index: -1;
+  mix-blend-mode: difference;
+  transform: translateY(-50%);
+  border: 2px solid #00ACED;
+  right: -5%;
+  animation-name: circle;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes circle {
+  0% {
+    outline: 0px solid rgba(237, 0, 0, 0);
+  }
+  100% {
+    outline: 10px solid rgba(0, 174, 237, 0.1764705882);
+  }
+}
+.main-grid .grid-container {
+  background-color: rgba(255, 255, 255, 0.096);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.main-grid .grid-container div {
+  border-style: dashed;
+}/*# sourceMappingURL=layout.css.map */
