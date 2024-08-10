@@ -10,7 +10,7 @@ export const gridAnimation = () => {
     gsap.from(".grid-container", {
       opacity: 0,
       delay: 0.2,
-      duration: 0.5,
+      duration: 1.5,
       ease: "power3.in",
       scrollTrigger: {
         trigger: ".grid-container",
