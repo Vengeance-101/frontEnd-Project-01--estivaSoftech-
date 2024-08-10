@@ -4,7 +4,7 @@ import MainNav from "../navbar/MainNav";
 import Herosection from "../hero/Herosection";
 import LocomotiveScroll from "locomotive-scroll";
 import NumBanner from "../numberBanner/NumBanner";
-
+import FixedSidebar from "../fixedSidebar/FixedSidebar";
 const MainPage = () => {
   useEffect(() => {
     const locomotiveScroll = new LocomotiveScroll();
@@ -18,10 +18,10 @@ const MainPage = () => {
       <div id="main" data-scroll-container>
         <Herosection />
         <NumBanner />
+        <FixedSidebar />
+
+        <section className="h-screen w-full bg-[red]"></section>
       </div>
-      <span className="c-scrollbar">
-        <span className="c-scrollbar_thumb"></span>
-      </span>
     </>
   );
 };

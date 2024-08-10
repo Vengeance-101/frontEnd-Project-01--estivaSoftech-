@@ -14,7 +14,7 @@
   border-radius: 20px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(#0073ff,#ffbb00);
+  background: linear-gradient( #ff6a00, #ee0979);
 }
 
 #main{
@@ -24,4 +24,6 @@
 @import '../modules/scrollthumb';
 @import '../modules/nav';
 @import '../modules/herosection';
-@import '../modules/numBanner'
+@import '../modules/numBanner';
+@import '../modules/fixedSidebar';
+@import '../modules/commonBtn'

@@ -1,0 +1,57 @@
+.repeat-signal{
+  transition: all 300ms ease-in-out;
+  border: 2px solid #04141F;
+  animation-name: signal;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+ 
+
+@keyframes signal{
+
+  0%{
+  outline: 0px solid #04141F;
+  
+}
+100%{
+  
+  outline: 20px solid #04141f00;
+  }
+
+}
+@keyframes signalColor{
+
+  0%{
+  outline: 0px solid #ffffff;
+  
+}
+100%{
+  
+  outline: 20px solid #ffffff00;
+  }
+
+}
+
+.btn-content{
+  transition: all 300ms ease-in-out;
+}
+
+.common-btn-container{
+
+  transition: all 300ms ease-in-out;
+  &:hover{
+    background: #04141F;
+  }
+  &:hover .btn-content{
+    color: white;
+  }
+  &:hover .repeat-signal{
+    border-color: white;
+      animation-name: signalColor;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+}
