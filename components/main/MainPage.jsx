@@ -1,10 +1,11 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import MainNav from "../navbar/MainNav";
 import Herosection from "../hero/Herosection";
 import LocomotiveScroll from "locomotive-scroll";
+import NumBanner from "../numberBanner/NumBanner";
+
 const MainPage = () => {
-  const scrollRef = useRef(null);
   useEffect(() => {
     const locomotiveScroll = new LocomotiveScroll();
     return () => {
@@ -14,13 +15,9 @@ const MainPage = () => {
   return (
     <>
       <MainNav />
-      <div
-        id="main"
-        ref={scrollRef}
-        data-scroll-container
-        className="scroll-container"
-      >
+      <div id="main" data-scroll-container>
         <Herosection />
+        <NumBanner />
       </div>
       <span className="c-scrollbar">
         <span className="c-scrollbar_thumb"></span>

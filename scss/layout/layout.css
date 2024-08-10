@@ -42,6 +42,10 @@ html.lenis {
   pointer-events: none;
 }
 
+.nav-container {
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.555);
+}
+
 .links ul {
   display: flex;
   gap: 2rem;
@@ -103,7 +107,7 @@ html.lenis {
   font-weight: 900;
 }
 .title span {
-  background: linear-gradient(to left, #FABB16, #3D86E0);
+  background: linear-gradient(to right, #FABB16, #3D86E0);
   color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
@@ -131,9 +135,10 @@ html.lenis {
   color: white;
 }
 .talk-btn a h1 {
-  color: rgba(255, 255, 255, 0.521);
+  color: transparent;
   transition: all 300ms ease-in-out;
-  font-weight: 700;
+  font-weight: 500;
+  -webkit-text-stroke: 1px #fff;
 }
 .talk-btn a::after {
   content: "";
@@ -170,4 +175,29 @@ html.lenis {
 }
 .grid-container .main-grid div {
   border-style: dashed;
+}
+
+.num {
+  font-size: 6rem;
+  font-weight: bolder;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  transition: all 300ms ease-in-out;
+}
+
+.numBanner-title {
+  transition: all 300ms ease-in-out;
+  color: rgb(160, 160, 160);
+  font-weight: 500;
+}
+
+.banner-box {
+  transition: all 300ms ease-in-out;
+}
+.banner-box:hover .num {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0);
+  color: #DD4242;
+}
+.banner-box:hover .numBanner-title {
+  color: white;
 }/*# sourceMappingURL=layout.css.map */

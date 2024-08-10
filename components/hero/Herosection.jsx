@@ -18,7 +18,7 @@ const Herosection = () => {
       />
 
       <div className="hero-content container  px-11  left-1/2 -translate-x-1/2 absolute z-10  h-full ">
-        <h1 className="text-5xl title text-white ">
+        <h1 className="text-[3.3rem] title text-white leading-none ">
           {" "}
           <span className="">Building the Next Best</span> Thing for the Digital
           World

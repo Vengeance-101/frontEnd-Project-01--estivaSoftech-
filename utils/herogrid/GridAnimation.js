@@ -15,7 +15,7 @@ export const gridAnimation = () => {
       scrollTrigger: {
         trigger: ".grid-container",
         scroller: document.documentElement,
-        scrub: 3,
+        scrub: 2,
         start: "top 75%",
         end: "bottom bottom",
       },

@@ -1,6 +1,6 @@
 import { Signika } from "next/font/google";
 import "./globals.css";
-const signika = Signika({ subsets: ["latin"], weight: "300" });
+const signika = Signika({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",

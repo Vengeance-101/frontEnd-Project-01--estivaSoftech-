@@ -4,7 +4,7 @@
   font-weight:900;
 
   span{
-    background: linear-gradient(to left,#FABB16,#3D86E0);
+    background: linear-gradient(to right,#FABB16,#3D86E0);
     color: transparent;
     background-clip: text;
     font-weight:900;
@@ -32,12 +32,14 @@
 
     }
     h1{
-      color: rgba(255, 255, 255, 0.521);
+      // color: rgba(255, 255, 255, 0.521);
+      color: transparent;
       transition: all 300ms ease-in-out;
-       font-weight: 700;
+       font-weight: 500;
+    -webkit-text-stroke: 1px #fff;
+
      
     }
-    // background-color: transparent;
     display: inline-flex;
     width: 100%;
     height: 100%;
