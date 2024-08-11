@@ -4,7 +4,7 @@ import React from "react";
 const HeroGrid = () => {
   gridAnimation();
   return (
-    <div className="h-[42vh] w-full absolute   container grid-container backdrop-blur-2xl  left-[50%] -translate-x-1/2 px-11  bottom-0">
+    <div className="h-[42vh] w-full absolute scale-[1]  container grid-container backdrop-blur-2xl  left-[50%] -translate-x-1/2 px-11  bottom-0">
       <div className=" h-full w-full  main-grid backdrop-blur-3xl rounded-t-[1rem] overflow-hidden grid grid-cols-3 grid-rows-2  ">
         {gridTitle.map(({ maintitle, tag }, i) => {
           return (

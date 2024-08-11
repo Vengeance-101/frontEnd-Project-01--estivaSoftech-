@@ -6,6 +6,7 @@ import LocomotiveScroll from "locomotive-scroll";
 import NumBanner from "../numberBanner/NumBanner";
 import FixedSidebar from "../fixedSidebar/FixedSidebar";
 import FirstSection from "../FirstSection/FirstSection";
+import SecondSection from "../SecondSection/SecondSection";
 const MainPage = () => {
   useEffect(() => {
     const scrollEl = document.querySelector("#main");
@@ -25,7 +26,7 @@ const MainPage = () => {
         <NumBanner />
         <FixedSidebar />
         <FirstSection />
-        <section className="w-full h-[100vh] bg-[red]"></section>
+        <SecondSection />
       </div>
     </>
   );

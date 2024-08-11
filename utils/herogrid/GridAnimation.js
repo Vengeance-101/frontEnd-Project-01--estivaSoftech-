@@ -9,15 +9,16 @@ export const gridAnimation = () => {
 
     gsap.from(".grid-container", {
       opacity: 0,
-      delay: 0.2,
-      duration: 1.5,
-      ease: "power3.in",
+      scale: 0.5,
+      y: 50,
+      ease: "power3",
       scrollTrigger: {
-        trigger: ".grid-container",
+        trigger: ".hero-section",
         scroller: document.documentElement,
         scrub: 2,
-        start: "top 75%",
-        end: "bottom bottom",
+        start: "top top",
+        end: "bottom 100%",
+        // markers: true,
       },
     });
   });

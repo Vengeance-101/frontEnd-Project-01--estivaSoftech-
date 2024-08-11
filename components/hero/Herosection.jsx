@@ -9,7 +9,7 @@ const Herosection = () => {
 
   return (
     <div
-      className="w-full h-[145vh] overflow-hidden relative border-t-[1px] border-black "
+      className="w-full h-[145vh] overflow-hidden hero-section relative border-t-[1px] border-black "
       data-scroll-section
     >
       <video
