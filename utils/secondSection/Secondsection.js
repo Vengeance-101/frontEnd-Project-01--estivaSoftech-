@@ -13,7 +13,7 @@ export const secondSection = () => {
         trigger: ".second-section",
         scroller: document.documentElement,
         start: "top bottom",
-        end: "top top",
+        end: "top 20%",
         // markers: true,
         scrub: 3,
       },
