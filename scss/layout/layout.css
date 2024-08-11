@@ -343,4 +343,9 @@ html.lenis {
 
 .second-section {
   scale: 1;
+}
+
+.gradient-card {
+  background: linear-gradient(to letf, black, indigo);
+  color: white;
 }/*# sourceMappingURL=layout.css.map */
