@@ -5,9 +5,14 @@ import Herosection from "../hero/Herosection";
 import LocomotiveScroll from "locomotive-scroll";
 import NumBanner from "../numberBanner/NumBanner";
 import FixedSidebar from "../fixedSidebar/FixedSidebar";
+import FirstSection from "../FirstSection/FirstSection";
 const MainPage = () => {
   useEffect(() => {
-    const locomotiveScroll = new LocomotiveScroll();
+    const scrollEl = document.querySelector("#main");
+    const locomotiveScroll = new LocomotiveScroll({
+      el: scrollEl,
+      smooth: true,
+    });
     return () => {
       locomotiveScroll.destroy();
     };
@@ -15,12 +20,12 @@ const MainPage = () => {
   return (
     <>
       <MainNav />
-      <div id="main" data-scroll-container>
+      <div id="main" data-scroll-container data-scroll>
         <Herosection />
         <NumBanner />
         <FixedSidebar />
-
-        <section className="h-screen w-full bg-[red]"></section>
+        <FirstSection />
+        <section className="w-full h-[100vh] bg-[red]"></section>
       </div>
     </>
   );

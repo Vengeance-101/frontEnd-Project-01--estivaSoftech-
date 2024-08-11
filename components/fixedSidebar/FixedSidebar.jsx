@@ -5,7 +5,7 @@ import React from "react";
 const FixedSidebar = () => {
   sideBarAnimation();
   return (
-    <div className=" w-full  main-sidebar-container ">
+    <div className=" w-full  main-sidebar-container " data-scroll-section>
       <div className="container w-full py-20 px-11 mx-auto ">
         <h1 className="text-[#04141F]  text-3xl font-bold overflow-hidden">
           Your One-stop Outsourcing Partner to Turbocharge Your Business Growth

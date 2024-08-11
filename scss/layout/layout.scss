@@ -16,9 +16,8 @@
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient( #ff6a00, #ee0979);
 }
-
-#main{
-  overflow-x: hidden
+body{
+  background: white;
 }
 
 @import '../modules/scrollthumb';
@@ -26,4 +25,6 @@
 @import '../modules/herosection';
 @import '../modules/numBanner';
 @import '../modules/fixedSidebar';
-@import '../modules/commonBtn'
+@import '../modules/commonBtn';
+@import '../modules/firstSection';
+@import '../modules/commonbtn2'

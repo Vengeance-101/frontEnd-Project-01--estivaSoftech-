@@ -2,7 +2,10 @@ import { NbannerData } from "@/data/NumbannerData/NbannerData";
 import React from "react";
 const NumBanner = () => {
   return (
-    <div className="bg-[#0F172A] main-nBanner-container  w-full">
+    <div
+      className="bg-[#0F172A] main-nBanner-container  w-full"
+      data-scroll-section
+    >
       <div className="container main-naBnner w-full flex justify-between items-center mx-auto px-11 py-2">
         {NbannerData.map(({ num, title }, i) => {
           return (

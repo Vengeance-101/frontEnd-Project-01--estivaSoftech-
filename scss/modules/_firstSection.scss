@@ -1,0 +1,35 @@
+.first-section-grid{
+  grid-template-rows: 58% 45%;
+}
+
+.first-section-box{
+  background: rgba(112, 128, 144, 0.185);
+  border-radius: 1.5rem;
+  scale: 1;
+  border: 1px solid rgb(180, 180, 180);
+}
+
+.related-services{
+  li{
+    display: flex;
+    gap: 5px;
+    font-size: .8rem;
+    color: #b0b8c7;
+    margin-block: 5px;
+    font-weight: bold;
+    transition: all 300ms ease-in-out;
+    &:hover{
+      transform: translateX(10%);
+      color: #9DE7EF;
+    }
+  }
+}
+
+.skills{
+  h1{
+      background:  linear-gradient(to right, #40B2DC,#A7D756);
+      color: transparent;
+      font-weight: bolder;
+      background-clip: text;
+  }
+}

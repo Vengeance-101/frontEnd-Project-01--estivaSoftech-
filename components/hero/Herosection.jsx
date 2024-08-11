@@ -8,7 +8,10 @@ const Herosection = () => {
   talkBtn();
 
   return (
-    <div className="w-full h-[145vh] overflow-hidden relative border-t-[1px] border-black ">
+    <div
+      className="w-full h-[145vh] overflow-hidden relative border-t-[1px] border-black "
+      data-scroll-section
+    >
       <video
         src="/heroVideo/heroVideo.webm"
         muted
